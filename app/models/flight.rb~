@@ -1,0 +1,4 @@
+class Flight < ApplicationRecord
+  has_one :departure, foreign_key: "departing_flight_id"
+  has_one :arrival, foreign_key: "arriving_flight_id"
+end

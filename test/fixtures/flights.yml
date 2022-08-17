@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departure_airport_id: 1
+  arrival_airport_id: 1
+  start: 2022-08-16 15:32:25
+  duration: 9.99
+
+two:
+  departure_airport_id: 1
+  arrival_airport_id: 1
+  start: 2022-08-16 15:32:25
+  duration: 9.99
