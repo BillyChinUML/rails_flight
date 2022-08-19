@@ -1,0 +1,7 @@
+<h1>Flights</h1>
+
+<h2>List of Airports</h2>
+
+<%= select_tag("flight", options_for_select(@flight_options)) %><br><br>
+
+<%= link_to "Home", root_path %>

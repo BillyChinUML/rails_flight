@@ -6,24 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# phnom_penh = Airport.create(code: "PNH")
+flights = Flight.create([{departure_airport_id: 3, arrival_airport_id: 4, start: DateTime.civil_from_format(:local, 2023, 5, 29, 11, 10, 0), duration: 38.08333}, {departure_airport_id: 3, arrival_airport_id: 7, start: DateTime.civil_from_format(:local, 2023, 3, 9, 11, 10, 0), duration: 39.5}, {departure_airport_id: 3, arrival_airport_id: 8, start: DateTime.civil_from_format(:local, 2022, 12, 5, 23, 55, 0), duration: 29.9666}, {departure_airport_id: 3, arrival_airport_id: 9, start: DateTime.civil_from_format(:local, 2022, 10, 27, 0, 55, 0), duration: 26.3666}, {departure_airport_id: 3, arrival_airport_id: 10, start: DateTime.civil_from_format(:local, 2022, 12, 9, 23, 55, 0), duration: 30.7333}, {departure_airport_id: 3, arrival_airport_id: 12, start: DateTime.civil_from_format(:local, 2022, 10, 3, 9, 55, 0), duration: 26.25}, {departure_airport_id: 4, arrival_airport_id: 3, start: DateTime.civil_from_format(:local, 2023, 2, 21, 15, 25, 0), duration: 29.1666}, {departure_airport_id: 7, arrival_airport_id: 3, start: DateTime.civil_from_format(:local, 2022, 8, 24, 21, 30, 0), duration: 54.1666}, {departure_airport_id: 8, arrival_airport_id: 3, start: DateTime.civil_from_format(:local, 2022, 11, 1, 9, 45, 0), duration: 37.333}, {departure_airport_id: 10, arrival_airport_id: 3, start: DateTime.civil_from_format(:local, 2022, 9, 8, 15, 31, 0), duration: 44.65}, {departure_airport_id: 12, arrival_airport_id: 3, start: DateTime.civil_from_format(:local, 2022, 9, 26, 10, 30, 0), duration: 21.0}, {departure_airport_id: 5, arrival_airport_id: 8, start: DateTime.civil_from_format(:local, 2022, 11, 10, 16, 41, 0), duration: 6.61666}, {departure_airport_id: 6, arrival_airport_id: 8, start: DateTime.civil_from_format(:local, 2022, 8, 21, 14, 10, 0), duration: 1.88333}, {departure_airport_id: 11, arrival_airport_id: 7, start: DateTime.civil_from_format(:local, 2022, 9, 3, 18, 9, 0), duration: 4.8333}])
 
-# boston = Airport.create(code: "BOS")
+departures = Departure.create([{departure_airport_id: 3, departing_flight_id: 2}, {departure_airport_id: 3, departing_flight_id: 3}, {departure_airport_id: 3, departing_flight_id: 4}, {departure_airport_id: 3, departing_flight_id: 5}, {departure_airport_id: 3, departing_flight_id: 6}, {departure_airport_id: 3, departing_flight_id: 7}, {departure_airport_id: 4, departing_flight_id: 8}, {departure_airport_id: 7, departing_flight_id: 9}, {departure_airport_id: 8, departing_flight_id: 10}, {departure_airport_id: 10, departing_flight_id: 11}, {departure_airport_id: 12, departing_flight_id: 12}, {departure_airport_id: 5, departing_flight_id: 13}, {departure_airport_id: 6, departing_flight_id: 14}, {departure_airport_id: 11, departing_flight_id: 15}])
 
-# long_beach = Airport.create(code: "LGB")
-
-# modesto = Airport.create(code: "MOD")
-
-# philadelphia = Airport.create(code: "PHL")
-
-# seattle = Airport.create(code: "SEA")
-
-# providence = Airport.create(code: "PVD")
-
-# jacksonville = Airport.create(code: "JAX")
-
-# rochester = Airport.create(code: "RST")
-
-# paris = Airport.create(code: "PAR")
-
-airports = Airport.create([{code: "PNH"}, {code: "BOS"}, {code: "LGB"}, {code: "MOD"}, {code: "PHL"}, {code: "SEA"}, {code: "PVD"}, {code: "JAX"}, {code: "RST"}, {code: "PAR"}])
+arrivals = Arrival.create([{arrival_airport_id: 4, arriving_flight_id: 2}, {arrival_airport_id: 7, arriving_flight_id: 3}, {arrival_airport_id: 8, arriving_flight_id: 4}, {arrival_airport_id: 9, arriving_flight_id: 5}, {arrival_airport_id: 10, arriving_flight_id: 6}, {arrival_airport_id: 12, arriving_flight_id: 7}, {arrival_airport_id: 3, arriving_flight_id: 8}, {arrival_airport_id: 3, arriving_flight_id: 9}, {arrival_airport_id: 3, arriving_flight_id: 10}, {arrival_airport_id: 3, arriving_flight_id: 11}, {arrival_airport_id: 3, arriving_flight_id: 12}, {arrival_airport_id: 8, arriving_flight_id: 13}, {arrival_airport_id: 8, arriving_flight_id: 14}, {arrival_airport_id: 7, arriving_flight_id: 15}])

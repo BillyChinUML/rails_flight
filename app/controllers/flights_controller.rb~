@@ -1,0 +1,11 @@
+class FlightsController < ApplicationController
+  def index
+    @flights = Flight.search(params[:search])
+    @airport_options = Airport.all.map{ |a| [ a.code, a.id ] }
+    @flight_options = Flight.all.map{ |f| [ f.start, f.id ] }
+  end
+
+  def show
+    @flight = Flight.find(params[:id])
+  end
+end

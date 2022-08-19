@@ -1,0 +1,10 @@
+<h1>Flight <%= @flight.id %></h1>
+
+<h2>Departure Airport: <%= @departure_name %></h2>
+
+<h2>Arrival Airport: <%= @arrival_name %></h2>
+
+<h2>Date and Time: <%= @flight.start %></h2>
+
+<%= link_to "Back", flights_path %><br>
+<%= link_to "Home", root_path %>

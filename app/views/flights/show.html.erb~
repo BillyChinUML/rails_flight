@@ -1,0 +1,4 @@
+<h1>Insert Flight Content Here</h1>
+
+<%= link_to "Back", flights_path %><br>
+<%= link_to "Home", root_path %>
