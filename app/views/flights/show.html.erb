@@ -6,5 +6,7 @@
 
 <h2>Date and Time: <%= @flight.start %></h2>
 
+<%= link_to "Book the Flight!", new_flight_booking_path(@flight.id) %><br>
 <%= link_to "Back", flights_path %><br>
 <%= link_to "Home", root_path %>
+

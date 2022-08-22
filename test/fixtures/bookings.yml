@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2022-08-19 13:31:51
-  departure_airport_id: 1
-  arrival_airport_id: MyString
+  date: 2022-08-19 13:40:53
+  departure_airport: MyString
+  arrival_airport: MyString
+  flight: one
 
 two:
-  date: 2022-08-19 13:31:51
-  departure_airport_id: 1
-  arrival_airport_id: MyString
+  date: 2022-08-19 13:40:53
+  departure_airport: MyString
+  arrival_airport: MyString
+  flight: two

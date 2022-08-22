@@ -1,0 +1,10 @@
+<h1>Booking Information</h1>
+
+<h2>Flight Information</h2>
+<ul>
+  <li>Date and Time: @booking.date</li>
+  <li>Departure Airport: @booking.departure_airport</li>
+  <li>Arrival Airport: @booking.arrival_airport</li>
+</ul>
+
+<%= link_to "Home", root_path %>
